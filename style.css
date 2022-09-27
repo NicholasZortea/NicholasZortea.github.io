@@ -1,8 +1,39 @@
+
+.LogoItens {
+    list-style: none;
+}
+
+.logoControle {
+    display: inline-block;
+}
+
+.alura {
+    display: inline-block;
+}
+.geek {
+    display: inline-block;
+}
+
 .barra-pesquisa
 {
-    padding-left: 360px;
     display: inline-block;
-    
+}
+
+.login {
+    display: inline-block;
+    text-align: right;
+    width: 42px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16;
+    line-height: 19px;
+    color: #2A7AE4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 22px;
+    padding-left: 22px;
+    border: solid 1px;
 }
 .imagem-banner {
     width: 100%;
