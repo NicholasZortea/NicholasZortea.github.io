@@ -36,6 +36,29 @@ html {
     width: auto;
 }
 
+.Banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(banner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 7rem 1rem;
+}
+
+.Banner > h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    
+}
+
+.Banner > p {
+    font-weight: 600;
+    font-size: 16px;
+    color: white
+}
+
 /*media querry tablet*/
 @media screen and (min-width: 768px){
     .divMobile {
