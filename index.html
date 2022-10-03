@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="PT-BR">
     <head>
-        <title>Alura Geek</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek | Página Inicial</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
 
-    
-
     <body>
-        <header>
-                <ul class="LogoItens">
-                    <li  class="logoControle"> <img src="img/cabecalho/logoConsole.svg" alt="imagem de um logo de um controle de video game"></li>
-                    <li class="alura"> <img src="img/cabecalho/AluraEscrita.svg" alt="Escrita Alura"> </li>
-                    <li class="geek"> <img src="img/cabecalho/GeekEscrita.svg" alt="Escrita Geek"> </li>
-                    <li class="barra-pesquisa"> <img src="img/cabecalho/barra-pesquisa.png" alt="Barra de pesquisa" /></li>
-                    <li class="login">Login</li>
-                </ul>
-            
+
+        <header class="cabecalho">
+            <div class="divMobile">
+                <img src="Logo.png" alt="Imagem da Logo da Alura Geek" class="logo">
+                <p>Login</p>
+                <img src="IconeLupaEsquerda.svg" alt="Lupa para pesquisar" class="lupa">
+            </div>
+
+            <div class="cabecalhoLadoEsquerdo">
+                <img src="Logo.png" alt="Imagem da Logo da Alura Geek" class="LogoTablet">
+
+                <div class="BarradePesquisa">
+                    <form action="">
+                        <input type="text" placeholder="O que deseja encontrar?" class="inputCabecalho">
+                    </form>
+                    <img src="IconeLupaEsquerda.svg" alt="Icone de Lupa">
+                 </div>
+            </div>
         </header>
-
-        <div>
-            <img src="img/banner/banner-image.png" alt="Imagem do Banner" class="imagem-banner"/>
-        </div>
         
-
-
     </body>
-    
 </html>

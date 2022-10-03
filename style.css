@@ -1,40 +1,76 @@
-
-.LogoItens {
-    list-style: none;
+:root {
+    --azul-padrao: #2A7AE4;
 }
 
-.logoControle {
-    display: inline-block;
+html {
+    font-family: 'Raleway', sans-serif;
 }
 
-.alura {
-    display: inline-block;
-}
-.geek {
-    display: inline-block;
+
+.cabecalhoLadoEsquerdo {
+    display: none;
 }
 
-.barra-pesquisa
-{
-    display: inline-block;
+.divMobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem 0 .5rem;
+    margin: .5rem 0 .5rem 0;
 }
 
-.login {
-    display: inline-block;
-    text-align: right;
-    width: 42px;
-    height: 19px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16;
-    line-height: 19px;
-    color: #2A7AE4;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 22px;
-    padding-left: 22px;
-    border: solid 1px;
+.logo {
+    width: 100px;
+    height: 28px;
 }
-.imagem-banner {
-    width: 100%;
+
+.divMobile > p {
+    border: 1px solid var(--azul-padrao);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azul-padrao);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
+}
+
+.lupa {
+    width: auto;
+}
+
+/*media querry tablet*/
+@media screen and (min-width: 768px){
+    .divMobile {
+        display: none;
+    }
+    .cabecalhoLadoEsquerdo {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+        padding: 0 .5rem 0 .5rem;
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .LogoTablet {
+        width: 100px;
+        height: 28px;
+    }
+
+    .BarradePesquisa > form > input {
+        font-weight: 600;
+        color: #A2A2A2;
+        font-weight: 400;
+        border: none;
+        background-color: #F5F5F5;
+    }
+
+    .BarradePesquisa{
+        display: flex;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        padding: 8px 16px;
+        border-style: none;
+        align-items: center;
+        flex-grow: 1;
+    }
+
 }
