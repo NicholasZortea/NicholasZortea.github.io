@@ -1,5 +1,6 @@
 :root {
     --azul-padrao: #2A7AE4;
+    --cinza-medio-fonte: #464646
 }
 
 html {
@@ -40,23 +41,107 @@ html {
     display: flex;
     flex-direction: column;
     background-image: url(banner.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
     padding: 7rem 1rem;
+
 }
 
 .Banner > h1 {
     font-weight: 700;
     color: white;
     font-size: 22px;
-    
+    width: max-content;
+    margin-bottom: 3rem;
 }
 
 .Banner > p {
     font-weight: 600;
     font-size: 16px;
-    color: white
+    color: white;
+    width: max-content;
+}
+
+.Banner > a {
+    display: block;
+    background-color: var(--azul-padrao);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    width: max-content;
+    padding: 12px 16px;
+
+}
+
+.StarWars, .Consoles, .Diversos {
+    display: inherit;
+    margin: 1rem 1rem;
+}
+
+.TituloEVerTudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--cinza-medio-fonte);
+}
+
+.TituloEVerTudo > h2 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.verTudo > a > p {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--azul-padrao);
+    margin-right: .5rem;
+}
+
+.listaDeProdutos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.Produtos {
+    justify-content: center;
+    width: 156px;
+    padding: 0 auto;
+    margin: .5rem auto;
+}
+
+.Produtos img {
+    width: 100%;
+}
+
+.Produtos > p {
+    width: max-content;
+}
+
+.Produtos > img + p{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cinza-medio-fonte);
+}
+
+.Produtos p + p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cinza-medio-fonte);
+
+}
+
+.Produtos a {
+    color: var(--azul-padrao);
+    font-weight: 700;
+    font-size: 14px;
+
 }
 
 /*media querry tablet*/
