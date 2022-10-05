@@ -8,10 +8,16 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-
-.cabecalhoLadoEsquerdo {
+/*Displays que devem ser escondidos na versão mobile*/
+.cabecalhoTablet {
     display: none;
 }
+
+.faleConosco > h1 {
+    display: none;
+}
+
+/*Dim dos Displays que devem ser escondidos na versão mobile*/
 
 .divMobile {
     display: flex;
@@ -25,7 +31,7 @@ html {
     height: 28px;
 }
 
-.divMobile > p {
+.divMobile > a {
     border: 1px solid var(--azul-padrao);
     font-size: 14px;
     font-weight: 600;
@@ -213,12 +219,58 @@ footer > .sobreNos > p {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     margin: 1rem 1rem;
     padding: .5rem .5rem;
+    text-decoration: none;
 }
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+
+.btnEnviaFormulario {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: var(--azul-padrao);
+    color: #FFF;
+    border: none;
+    padding: 1rem 1rem;
+    margin: .5rem 0 1rem 1rem;
+}
+
+.desenvolvidoPor {
+    background-color: #FFF;
+    width: 100%;
+}
+
+.desenvolvidoPor > p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.desenvolvidoPor > p {
+    padding: 2rem 4rem 2rem 4rem;
+}
+
 
 /*media querry tablet*/
 @media screen and (min-width: 768px){
+
+    /*Esconder a div da versão mobile*/
     .divMobile {
         display: none;
+    }
+    /*Fim do Esconder a div da versão mobile*/
+
+
+    /*Cabeçalho*/
+    .cabecalhoTablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2rem;
     }
     .cabecalhoLadoEsquerdo {
         display: flex;
@@ -227,6 +279,18 @@ footer > .sobreNos > p {
         justify-content: space-between;
         padding: 0 .5rem 0 .5rem;
         margin: .5rem 0 .5rem 0;
+    }
+
+    .cabecalhoLadoEsquerdo > img {
+        margin: 0 2rem 0 0;
+    }
+
+    .Login > a {
+        border: 1px solid var(--azul-padrao);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--azul-padrao);
+        padding: 0.5rem 2rem 0.5rem 2rem;
     }
 
     .LogoTablet {
@@ -250,7 +314,54 @@ footer > .sobreNos > p {
         border-style: none;
         align-items: center;
         flex-grow: 1;
+        justify-content: space-between;
     }
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    } 
+
+    /*Fim do Cabeçalho*/
+
+    /*Banner*/
+    .bannerTexto > h1 {
+        font-size: 52px;
+    }
+
+    .bannerTexto > p {
+        font-size: 22px;
+    }
+    /*Fim do Banner*/
+    
+
+    /*Rodapé*/
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sobreNos{
+        width: 50%;
+    }
+    .faleConosco{
+        width: 50%;
+    }
+
+    .faleConosco > h1 {
+        display: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 1rem 0 0 1rem;
+    }
+
+    .formNome{
+        margin: .5rem 1rem 0 1rem
+    }
+
+    /*Dim do Rodapé*/
+    
+    
 
 
 }
