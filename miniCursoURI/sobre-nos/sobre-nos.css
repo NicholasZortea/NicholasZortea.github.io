@@ -1,0 +1,23 @@
+.card {
+    margin: var(--tam-m) var(--tam-gg);
+    padding: var(--tam-m) var(--tam-gg);
+}
+
+.div-sobre-nos {
+    display: flex;
+    align-items: center;
+}
+
+.div-sobre-nos > div > img {
+    width: 300px;
+    background-color: #BFBFBF;
+}
+
+.div-sobre-nos > div, .div-sobre-nos > p {
+    width: 50%;
+}
+
+.div-sobre-nos > div {
+    display: flex;
+    justify-content: center;
+}
