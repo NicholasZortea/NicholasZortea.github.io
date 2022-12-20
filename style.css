@@ -1,6 +1,7 @@
 :root{
     --background-color-roxo-claro: #b9bada;
     --background-color-navigation-bar: #3d1365;
+    --background-color-gradient-forte: #00004f;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 .navigation_bar{
     position: fixed;
     padding-top: 1rem;
-    background-color: var(--background-color-navigation-bar);
+    background-color: var(--background-color-gradient-forte);
     width: 100%;
 }
 
@@ -41,13 +42,4 @@ body{
 
 
 
-.secao_sobre {
-    margin: 6rem 25% 0 25%;
-    padding: 0 2rem 0 2rem;
-    font-size: 2rem;
-    display: inline-block;
-}
 
-.secao_sobre > img {
-    display: inline-block;
-}
