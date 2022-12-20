@@ -1,0 +1,20 @@
+.projetos{
+    font-size: 2rem;
+    margin: 0 0 2rem 1rem;
+}
+
+.card_projeto{
+    border-style: solid;
+
+    display: inline;
+    list-style: none;
+    margin: 0 1rem;
+    color: black;
+}
+
+.card_projeto > div {
+    height: 120px;
+    display: flex;
+    width: 20%;
+    border: 1px solid #000;
+}
