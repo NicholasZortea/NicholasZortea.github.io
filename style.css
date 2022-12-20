@@ -1,18 +1,35 @@
 :root{
-    --font-color-roxo-claro: #b9bada;
+    --background-color-roxo-claro: #b9bada;
+    --background-color-navigation-bar: #3d1365;
 }
 
 body{
     background-color: var(--font-color-roxo-claro);
 }
 
+.navigation_bar{
+    position: fixed;
+    padding-top: 1rem;
+    background-color: var(--background-color-navigation-bar);
+    width: 100%;
+}
+
+.navigation_bar li {
+    color: var(--background-color-roxo-claro);
+}
+
+.nome_header{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
 .item{
     display: inline-block;
     margin-left: 1rem;
     list-style-type: none;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
     margin: 1rem 0 2rem 1rem;
     marker: none;
     border: none;
@@ -22,7 +39,15 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
+
+
 .secao_sobre {
-    margin: 0 2rem 0 2rem;
+    margin: 6rem 25% 0 25%;
     padding: 0 2rem 0 2rem;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.secao_sobre > img {
+    display: inline-block;
 }
