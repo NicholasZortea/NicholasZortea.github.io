@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicholas Zortea Graczik</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <script>
+        window.onload = function() {
+            alert("Esta página ainda está em construção, por isso carece de mais informações e estilização :)");
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        .nav-item > .nav-link{
+            font-size: 1.5rem;  
+        }
+    </style>
+
 </head>
-
 <body>
-    <header>
-        <nav class="navigation_bar">
-            <ul>
-                <a href="index.html"><li class="nome_header">Nicholas Zortea Graczik</li></a>
-                <a href="sobre/sobre.html"><li class="item">Sobre</li></a>
-                <a href="projetos/projetos.html"><li class="item">Projetos</li></a>
-                <a href="sobre.html"><li class="item">Experiência</li></a>
-                <a href="sobre.html"><li class="item">Contato</li></a>
-            </ul>
-        </nav>
-        <h1 class="nome">Nicholas Zortea Graczik</h1>
-    </header>
-
-    <main>
-        <section>
-            <div class="div_central">
-            <h1>Olá, eu sou o Nicholas e esse é o meu site :)</h1>
-            <p>Aspirante à desenvolvedor fullstack com uma sede insaciável por conhecimento.</p>
-            <p>Tecnologias:</p>
-            <ul class="icones_tecnologias">
-                <li>
-                    <img src="img/ISO_C++_Logo.svg" alt="logo da linguagem c++">
-                </li>
-                <li>
-                    <img src="img/java-svgrepo-com.svg" alt="logo da linguagem java">
-                </li>
-                <li>
-                    <img src="img/html-svgrepo-com.svg" alt="logo da linguagem de marcação html">
-                </li>
-                <li>
-                    <img src="img/css-svgrepo-com.svg" alt="logo da linguagem de estilização css">
-                </li>
-                <li>
-                    <img src="img/microsoft-sql-server-logo-svgrepo-com.svg" alt="logo da linguagem de queries sqlserver">
-                </li>
-            </ul>
-            </div>
-        </section>
-    </main>
     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 2rem;">Nicholas Zortea Graczik</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./CursosCertificados/cursosCertificados.html">Cursos e Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Educação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p>Olá! Eu me chamo Nicholas e este é o meu site/portfólio : )</p>
+    <p>Sou desenvolvedor em < T > e meu foco é em Java(mas não excluo outras possibilidades), caso você queira contratar a mim ou a meus serviços, minhas informações de contato estão na aba "Contato"</p>
+
+    <p>Algumas tecnologias que eu domino são:</p>
+    <ul>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>C#</li>
+        <br>
+        <li>HTML e CSS</li>
+        <li>Bootstrap</li>
+        <br>
+        <li>SqlServer</li>
+        <li>Firebird</li>
+        <br>
+        <li>AWS (S3, EC2, Transfer Family)</li>
+        <li>Linux (Centos 7.9, apenas CLI)</li>
+
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
